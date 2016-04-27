@@ -1,17 +1,32 @@
 {
-  "name": "react",
+  "name": "github-battle",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "ava 'app/**/*.test.js' --verbose --require ./other/setup-ava-tests.js"
+    "production": "webpack -p",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sophiaxhe/gitbattle.git"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sophiaxhe/gitbattle/issues"
+  },
+  "homepage": "https://github.com/sophiaxhe/gitbattle#readme",
   "dependencies": {
-    "jquery": "^2.2.3"
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1"
   },
   "devDependencies": {
-    "coffee-loader": "^0.7.2"
+    "babel-core": "^6.7.7",
+    "babel-loader": "^6.2.4",
+    "babel-preset-react": "^6.5.0",
+    "html-webpack-plugin": "^2.16.0",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1"
   }
 }
